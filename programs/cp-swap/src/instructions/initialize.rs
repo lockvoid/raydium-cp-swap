@@ -44,7 +44,7 @@ pub struct Initialize<'info> {
     /// ],
     ///
     /// Or random account: must be signed by cli
-    #[account(mut)]
+    #[account(mut, signer)]
     pub pool_state: UncheckedAccount<'info>,
 
     /// Token_0 mint, the key must smaller then token_1 mint.
